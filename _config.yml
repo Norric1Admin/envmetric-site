@@ -131,21 +131,21 @@ exclude:
   - LICENSE
 
 goals_page:
-    title: UK metrics for Environmental Statistics
-    description: Click on each goal for UK Environmental Statistics data.
+    title: UK Metrics for Environmental Statistics
+    description: Click on each topic area below to view our published Environmental Statistics data. [SITE IN PROGRESS]
 
 reporting_status:
-    description: An overview of Environmental Statistics metrics.
+    description: UK Metrics for Environmental Statistics
 
 frontpage_introduction_banner:
-  title: Environmental metrics (TEST SITE)
-  description: [IN PROGRESS]
+  title: UK Metrics for Environmental Statistics
+  description: Click on each topic area below to view our published Environmental Statistics data. [SITE IN PROGRESS]
 
 
 # This controls the text that appears above the goals grid.
 frontpage_goals_grid:
-  title: UK metrics for Environmental Statistics
-  description: Click on each goal for UK Environmental Statistics data.
+  title: UK Metrics for Environmental Statistics
+  description: Click on each topic area below to view our published Environmental Statistics data. [SITE IN PROGRESS]
 
 
 # Optionally uncomment and update the settings below to control the mapping functionality.
