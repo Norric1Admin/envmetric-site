@@ -39,9 +39,9 @@ analytics:
 
 # Replace the email addresses below.
 email_contacts:
-  questions: christopher.norris@ons.gov.uk
-  suggestions: christopher.norris@ons.gov.uk
-  functional: christopher.norris@ons.gov.uk
+  questions: environment.accounts@ons.gov.uk
+  suggestions: environment.accounts@ons.gov.uk
+  functional: environment.accounts@ons.gov.uk
   
 # Github Repo for Data
 repo_name: envmetric-data
