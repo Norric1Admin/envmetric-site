@@ -6,7 +6,7 @@
 remote_theme: open-sdg/open-sdg@1.0.0
 
 # Replace this title as needed.
-title: Metrics For Environmental Statistics (TEST SITE)
+title: UK Metrics for Environmental Statistics [SITE IN PROGRESS]
 # Replace the baseurl with the name of this repository. For example, if the repository is named
 # "my-site-repository", then update the baseurl like so:
 # baseurl: "/my-site-repository"
@@ -131,21 +131,21 @@ exclude:
   - LICENSE
 
 goals_page:
-    title: UK metrics for Environmental Statistics
-    description: Click on each goal for UK Environmental Statistics data.
+    title: UK Metrics for Environmental Statistics
+    description: Click on each topic area below to view our published Environmental Statistics data. [SITE IN PROGRESS]
 
 reporting_status:
-    description: An overview of Environmental Statistics metrics.
+    description: UK Metrics for Environmental Statistics
 
 frontpage_introduction_banner:
-  title: Environmental metrics (TEST SITE)
-  description: [IN PROGRESS]
+  title: UK Metrics for Environmental Statistics
+  description: Click on each topic area below to view our published Environmental Statistics data. [SITE IN PROGRESS]
 
 
 # This controls the text that appears above the goals grid.
 frontpage_goals_grid:
-  title: UK metrics for Environmental Statistics
-  description: Click on each goal for UK Environmental Statistics data.
+  title: UK Metrics for Environmental Statistics
+  description: Click on each topic area below to view our published Environmental Statistics data. [SITE IN PROGRESS]
 
 
 # Optionally uncomment and update the settings below to control the mapping functionality.
