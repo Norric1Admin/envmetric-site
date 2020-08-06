@@ -3,32 +3,32 @@
 # Tell the Remote Theme plugin to use the Open SDG platform (Jekyll theme).
 # Recommended: set this to a particular "release" of Open SDG. For example:
 #remote_theme: open-sdg/open-sdg@0.10.0
-remote_theme: open-sdg/open-sdg@master
+remote_theme: open-sdg/open-sdg@1.0.0
 
 # Replace this title as needed.
-title: Indicators For The Sustainable Development Goals
+title: Metrics For Environmental Statistics (TEST SITE)
 # Replace the baseurl with the name of this repository. For example, if the repository is named
 # "my-site-repository", then update the baseurl like so:
 # baseurl: "/my-site-repository"
-baseurl: "/open-sdg-site-starter"
+baseurl: "/envmetric-site"
 url: ""
 data_dir: data
 environment: staging
 
 # In the next few items, replace "open-sdg" with the name of your GitHub
 # organization, and "open-sdg-data-starter" with the name of your data repository.
-remote_data_prefix: "https://open-sdg.github.io/open-sdg-data-starter"
+remote_data_prefix: "https://Norric1Admin.github.io/envmetric-data"
 # URL for the "Edit Data" button on indicators.
-data_edit_url: http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/data/indicator_[id].csv
+data_edit_url: http://prose.io/#Norric1Admin/envmetric-data/edit/develop/data/indicator_[id].csv
 # URL for the "Edit Metadata" button on indicators.
-metadata_edit_url: http://prose.io/#open-sdg/open-sdg-data-starter/edit/develop/meta/[id].md
+metadata_edit_url: http://prose.io/#Norric1Admin/envmetric-data/edit/develop/meta/[id].md
 
 # Automatically create indicator pages, goal pages,
 # and some other required pages.
 create_indicators:
   layout: indicator
 create_goals:
-  layout: goal
+  layout: goal-by-target-vertical
 create_pages: true
 
 analytics:
@@ -39,15 +39,20 @@ analytics:
 
 # Replace the email addresses below.
 email_contacts:
-  questions: test@example.com
-  suggestions: test@example.com
-  functional: test@example.com
+  questions: christopher.norris@ons.gov.uk
+  suggestions: christopher.norris@ons.gov.uk
+  functional: christopher.norris@ons.gov.uk
+  
+# Github Repo for Data
+repo_name: envmetric-data
+branch: develop
+org_name: Norric1Admin
 
 # International Support
 # Eg name: Australia and adjective: Australian
 country:
-  name: Australia
-  adjective: Australian
+  name: England
+  adjective: English
 
 # Optionally uncomment and update the settings below to control the frontpage heading and instructions.
 #frontpage_heading: Australian data for Sustainable Development Goal indicators
@@ -88,7 +93,7 @@ menu:
     translation_key: menu.updates
 
 footer_menu:
-  - path: mailto:my-email-address@example.com
+  - path: mailto:christopher.norris@ons.gov.uk
     translation_key: menu.contact_us
   - path: https://twitter.com/MyTwitterAccount
     translation_key: general.twitter
@@ -124,6 +129,24 @@ exclude:
   - README
   - README.md
   - LICENSE
+
+goals_page:
+    title: UK metrics for Environmental Statistics
+    description: Click on each goal for UK Environmental Statistics data.
+
+reporting_status:
+    description: An overview of Environmental Statistics metrics.
+
+frontpage_introduction_banner:
+  title: Environmental metrics (TEST SITE)
+  description: [IN PROGRESS]
+
+
+# This controls the text that appears above the goals grid.
+frontpage_goals_grid:
+  title: UK metrics for Environmental Statistics
+  description: Click on each goal for UK Environmental Statistics data.
+
 
 # Optionally uncomment and update the settings below to control the mapping functionality.
 # These are only a few of the possible settings. For more details, see:
