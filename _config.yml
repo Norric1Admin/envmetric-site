@@ -28,7 +28,7 @@ metadata_edit_url: http://prose.io/#Norric1Admin/envmetric-data/edit/develop/met
 create_indicators:
   layout: indicator
 create_goals:
-  layout: goal
+  layout: goal-by-target
 create_pages: true
 
 analytics:
