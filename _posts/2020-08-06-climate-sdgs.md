@@ -10,14 +10,12 @@ categories:
   - SDGs
 ---
 
-<strong>Section header</strong>
-[PREAMBLE / RELEVANCE TO OUR SITE]
+<strong>[PREAMBLE / RELEVANCE TO OUR SITE]</strong>
 
 e.g. The Sustainable Development Goals (SDGs) have several indicators that directly or indirectly relate to climate change...
 - [Metric 4.3.1](https://norric1admin.github.io/envmetric-site/4-3-1/) is based on [SDG indicator 6.3.2](https://sdgdata.gov.uk/6-3-2/), which is available on the official UK SDG website.
 
-<strong>Section header</strong>
-[SDGS DIRECTLY RELATED]
+<strong>[SDGS DIRECTLY RELATED]</strong>
 
 NOTE: The list is basically complete and agreed upon.
 
@@ -42,11 +40,10 @@ NOTE: The list is basically complete and agreed upon.
 - 13.b.1: Number of least developed countries and small island developing States that are receiving specialized support, and amount of support, including finance, technology and capacity-building, for mechanisms for raising capacities for effective climate change-related planning and management, including focusing on women, youth and local and marginalized communities
 
 
-<strong>Section header</strong>[SDGS INDIRECTLY RELATED]
+<strong>[SDGS INDIRECTLY RELATED]</strong>
 
 NOTE: The list is mostly (75%)) decided. For the sake of brevity I'm omitting it for this draft.
 
-<strong>Section header</strong>
-[SUMMARY]
+<strong>[SUMMARY]</strong>
 
 etc.
