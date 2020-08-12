@@ -1,0 +1,16 @@
+body.contrast-high {
+  .nav-tabs {
+    border-color: $color-highlight-highContrast;
+  }
+
+  #main-content .nav-tabs .nav-item.active a {
+    background: $color-highlight-highContrast;
+    color: $color-dark-highContrast;
+    border-color: $color-highlight-highContrast; }
+
+  a.nav-link:focus {
+    background: $color-light-highContrast;
+    color: $color-dark-highContrast;
+  }
+
+}
