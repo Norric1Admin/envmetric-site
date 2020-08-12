@@ -1,7 +1,7 @@
 # Jekyll configuration for Open SDG platform
 
 # Replace this title as needed.
-title: Indicators For The Sustainable Development Goals
+title: UK Metrics for Environmental Statistics
 frontpage_heading: custom.frontpage_heading
 frontpage_instructions: custom.frontpage_instructions
 # Replace the baseurl with the name of this repository.
@@ -87,8 +87,6 @@ footer_menu:
 # The list of languages that are translated. The first one is the default.
 languages:
   - en
-  - es
-  - fr
 
 # We will display "fr" as "fr-CA" (French Canadian) for testing purposes.
 languages_public:
