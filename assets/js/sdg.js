@@ -104,6 +104,14 @@ opensdg.autotrack = function(preset, category, action, label) {
       this.mapLayers[i] = $.extend(true, {}, mapLayerDefaults, options.mapLayers[i]);
     }
 
+    // Sort the map layers according to zoom levels.
+    this.mapLayers.sort(function(a, b) {
+      if (a.min_zoom === b.min_zoom) {
+        return a.max_zoom - b.max_zoom;
+      }
+      return a.min_zoom - b.min_zoom;
+    });
+
     this._defaults = defaults;
     this._name = 'sdgMap';
 
@@ -117,6 +125,34 @@ opensdg.autotrack = function(preset, category, action, label) {
       this.map.fitBounds(layer.getBounds());
     },
 
+    // Build content for a tooltip.
+    getTooltipContent: function(feature) {
+      var tooltipContent = feature.properties.name;
+      var tooltipData = this.getData(feature.properties);
+      if (tooltipData) {
+        tooltipContent += ': ' + tooltipData;
+      }
+      return tooltipContent;
+    },
+
+    // Update a tooltip.
+    updateTooltip: function(layer) {
+      if (layer.getTooltip()) {
+        var tooltipContent = this.getTooltipContent(layer.feature);
+        layer.setTooltipContent(tooltipContent);
+      }
+    },
+
+    // Create tooltip.
+    createTooltip: function(layer) {
+      if (!layer.getTooltip()) {
+        var tooltipContent = this.getTooltipContent(layer.feature);
+        layer.bindTooltip(tooltipContent, {
+          permanent: true,
+        }).addTo(this.map);
+      }
+    },
+
     // Select a feature.
     highlightFeature: function(layer) {
       // Abort if the layer is not on the map.
@@ -126,16 +162,7 @@ opensdg.autotrack = function(preset, category, action, label) {
       // Update the style.
       layer.setStyle(this.options.styleHighlighted);
       // Add a tooltip if not already there.
-      if (!layer.getTooltip()) {
-        var tooltipContent = layer.feature.properties.name;
-        var tooltipData = this.getData(layer.feature.properties);
-        if (tooltipData) {
-          tooltipContent += ': ' + tooltipData;
-        }
-        layer.bindTooltip(tooltipContent, {
-          permanent: true,
-        }).addTo(this.map);
-      }
+      this.createTooltip(layer);
       if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
         layer.bringToFront();
       }
@@ -187,6 +214,14 @@ opensdg.autotrack = function(preset, category, action, label) {
             fillColor: plugin.getColor(feature.properties),
           }
         });
+      });
+    },
+
+    // Update the tooltips of the selected Features on the map.
+    updateTooltips: function() {
+      var plugin = this;
+      this.selectionLegend.selections.forEach(function(selection) {
+        plugin.updateTooltip(selection);
       });
     },
 
@@ -263,7 +298,37 @@ opensdg.autotrack = function(preset, category, action, label) {
           geoJsons = [geoJsons];
         }
 
+        // Do a quick loop through to see which layers actually have data.
         for (var i = 0; i < geoJsons.length; i++) {
+          var layerHasData = true;
+          if (typeof geoJsons[i][0].features === 'undefined') {
+            layerHasData = false;
+          }
+          else if (!plugin.featuresShouldDisplay(geoJsons[i][0].features)) {
+            layerHasData = false;
+          }
+          if (layerHasData === false) {
+            // If a layer has no data, we'll be skipping it.
+            plugin.mapLayers[i].skipLayer = true;
+            // We also need to alter a sibling layer's min_zoom or max_zoom.
+            var hasLayerBefore = i > 0;
+            var hasLayerAfter = i < (geoJsons.length - 1);
+            if (hasLayerBefore) {
+              plugin.mapLayers[i - 1].max_zoom = plugin.mapLayers[i].max_zoom;
+            }
+            else if (hasLayerAfter) {
+              plugin.mapLayers[i + 1].min_zoom = plugin.mapLayers[i].min_zoom;
+            }
+          }
+          else {
+            plugin.mapLayers[i].skipLayer = false;
+          }
+        }
+
+        for (var i = 0; i < geoJsons.length; i++) {
+          if (plugin.mapLayers[i].skipLayer) {
+            continue;
+          }
           // First add the geoJson as static (non-interactive) borders.
           if (plugin.mapLayers[i].staticBorders) {
             var staticLayer = L.geoJson(geoJsons[i][0], {
@@ -336,6 +401,7 @@ opensdg.autotrack = function(preset, category, action, label) {
           yearChangeCallback: function(e) {
             plugin.currentYear = new Date(e.time).getFullYear();
             plugin.updateColors();
+            plugin.updateTooltips();
             plugin.selectionLegend.update();
           }
         }));
@@ -454,6 +520,15 @@ opensdg.autotrack = function(preset, category, action, label) {
       display = display && typeof feature.properties.disaggregations !== 'undefined';
       return display;
     },
+
+    featuresShouldDisplay: function(features) {
+      for (var i = 0; i < features.length; i++) {
+        if (this.featureShouldDisplay(features[i])) {
+          return true;
+        }
+      }
+      return false;
+    }
   };
 
   // A really lightweight plugin wrapper around the constructor,
@@ -1378,7 +1453,7 @@ function getBaseDataset() {
     pointBackgroundColor: '#FFFFFF',
     pointHoverBorderWidth: 1,
     tension: 0,
-    spanGaps: false
+    spanGaps: true
   });
 }
 
@@ -1388,7 +1463,7 @@ function getBaseDataset() {
  * @return {string} Human-readable description of combo
  */
 function getCombinationDescription(combination, fallback) {
-  var keys = Object.keys(combination);
+  var keys = Object.keys(combination).sort();
   if (keys.length === 0) {
     return fallback;
   }
@@ -2003,7 +2078,7 @@ var indicatorView = function (model, options) {
 
   $(this._rootElement).on('click', '#fields label', function (e) {
 
-    if(!$(this).closest('.variable-options').hasClass('disallowed')) {
+    if(!$(this).closest('.variable-selector').hasClass('disallowed')) {
       $(this).find(':checkbox').trigger('click');
     }
 
@@ -2311,15 +2386,15 @@ var indicatorView = function (model, options) {
     $(this._legendElement).html(view_obj._chartInstance.generateLegend());
   };
 
-  this.getGridColor = function(contrast=null) {
+  this.getGridColor = function(contrast) {
     return this.isHighContrast(contrast) ? '#222' : '#ddd';
   };
 
-  this.getTickColor = function(contrast=null) {
+  this.getTickColor = function(contrast) {
     return this.isHighContrast(contrast) ? '#fff' : '#000';
   }
 
-  this.isHighContrast = function(contrast=null) {
+  this.isHighContrast = function(contrast) {
     if (contrast) {
       return contrast === 'high';
     }
@@ -2767,16 +2842,25 @@ $(function() {
 });
 $(function() {
 
+  // @deprecated start
+  if (typeof translations.search === 'undefined') {
+    translations.search = { search: 'Search' };
+  }
+  if (typeof translations.general === 'undefined') {
+    translations.general = { hide: 'Hide' };
+  }
+  // @deprecated end
+
   var topLevelSearchLink = $('.top-level span:eq(1), .top-level button:eq(1)');
 
   var resetForSmallerViewport = function() {
     topLevelSearchLink.text('Search');
     $('.top-level li').removeClass('active');
     $('.top-level span').removeClass('open');
-  };  
-  
+  };
+
   var topLevelMenuToggle = document.querySelector("#menuToggle");
-  
+
   topLevelMenuToggle.addEventListener("click", function(){
     setTopLevelMenuAccessibilityActions();
   });
@@ -2818,16 +2902,16 @@ $(function() {
 
     if(target === 'search') {
       $(this).toggleClass('open');
-      
+
       if($(this).hasClass('open') || !wasVisible) {
-        $(this).text('Hide');
+        $(this).text(translations.general.hide);
       } else {
-        $(this).text('Search');
+        $(this).text(translations.search.search);
       }
     } else {
       // menu click, always hide search:
       topLevelSearchLink.removeClass('open');
-      topLevelSearchLink.text('Search');
+      topLevelSearchLink.text(translations.search.search);
     }
 
     if(!wasVisible) {
