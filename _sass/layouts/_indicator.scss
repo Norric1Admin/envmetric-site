@@ -1,0 +1,601 @@
+#main-content {
+  #indicatorData {
+    &.no-fields {
+
+      #series-help, #fields, #legend-help, #clear {
+        display: none;
+      }
+
+      &.no-units {
+        // no units and no series, hide the column:
+        > .col-md-3 {
+          display: none;
+        }
+        > .col-md-9 {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // For shrinking the sidebar.
+  .indicator-sidebar-hidden {
+    padding: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  // For expanding the main section.
+  .indicator-main-full {
+    width: 100%;
+  }
+  // To make the shrinking/expanding animated.
+  #indicator-sidebar, #indicator-main {
+    transition: width 0.3s ease;
+  }
+
+  #toolbar {
+    button {
+      width: 100%;
+      background-color: $backgroundColor;
+      position: relative;
+      border: 1px solid $horizontalRule-color;
+      text-align: left;
+      padding: 10px 7px 14px 7px;
+      font-size: 0.875em;
+      margin-right: 8px;
+
+      i {
+        position: absolute;
+        top: 11px;
+        right: 6px;
+        font-size: 1.063em;
+      }
+
+      &.disabled {
+        color: $indicator-field-color-disabled;
+        background: $indicator-field-backgroundColor-disabled;
+      }
+
+    }
+
+		.accessBtn {
+			padding: 0px !important;
+			border: none;
+		}
+
+    > p {
+      font-size: 96%;
+    }
+  }
+
+  #fields {
+
+    @include noselect;
+
+    padding-bottom: 14px;
+    font-size: 0.75em;
+    margin-top: 10px;
+
+    label {
+      background-color: $backgroundColor;
+      padding: 7px;
+      display: block;
+      font-weight: normal;
+      margin-bottom: 1px;
+      cursor: pointer;
+      position: relative;
+
+      input {
+        position: absolute;
+        top: 7px;
+        right: 6px;
+      }
+      &:hover {
+        border-color: $indicator-field-borderColor-hover;
+      }
+      &.disabled {
+        color: $indicator-field-color-disabled;
+        cursor: not-allowed;
+        &:hover {
+          border-color: $indicator-field-backgroundColor-disabled;
+        }
+      }
+      &.possible {
+        background-color: $indicator-field-backgroundColor-possible;
+      }
+      &.excluded {
+        background-color: $indicator-field-backgroundColor-excluded;
+        color: $color-light;
+
+        & input {
+          display: none;
+        }
+      }
+    }
+
+    h5 {
+      padding-left: 7px;
+      position: relative;
+      padding-right: 33px;
+
+      i {
+        font-size: 0.875em;
+        position: absolute;
+        top: 0;
+        right: 6px;
+      }
+    }
+
+    .bar {
+      height: 7px;
+      border: 1px solid $indicator-field-borderColor;
+      margin: 2px;
+      padding: 0;
+      position: relative;
+
+      > div {
+        height: 5px;
+        float: left;
+      }
+      .selected {
+        background-color: $indicator-field-backgroundColor-selected;
+      }
+
+      .default {
+        background-color: $backgroundColor;
+      }
+
+      .possible {
+        background-color: $indicator-field-backgroundColor-possible;
+      }
+
+      .excluded {
+        background-color: $indicator-field-backgroundColor-excluded;
+      }
+    }
+
+    .variable-selector {
+      position: relative;
+      cursor: pointer;
+      width: 100%;
+      border: 1px solid $indicator-selector-borderColor;
+      display: inline-block;
+      margin-right: 8px;
+      margin-bottom: 10px;
+
+      &:hover {
+        border-color: $indicator-selected-borderColor-hover;
+      }
+
+      .no-data-hint,
+      .variable-hint {
+        display: none;
+        padding-left: 7px;
+        color: $indicator-hint-color;
+      }
+
+      .variable-options {
+        background-color: $backgroundColor;
+        display: none;
+        position: static;
+        z-index: 100;
+        border-top: 0;
+        right: -1px;
+        left: -1px;
+        overflow: auto;
+
+        > div {
+          text-align: left;
+          padding: 4px;
+        }
+
+        button {
+          width: auto;
+          background-color: $backgroundColor;
+          border: 1px solid $indicator-fieldButton-borderColor;
+          color: $color-dark;
+          float: none;
+          position: static;
+          text-align: center;
+          width: 40%;
+          margin: 0;
+          font-size: 1.2em;
+          padding: inherit;
+          border-radius: 4px;
+
+          &:hover {
+            background: $indicator-fieldButton-borderColor-hover;
+          }
+        }
+
+        label {
+          padding-left: 7px;
+          padding-right: 25px;
+          position: relative;
+          font-size: 1.3em;
+
+          &:not(:first-child) {
+            border-top: 1px solid $indicator-fieldLabel-borderColor;
+          }
+
+          input {
+            position: absolute;
+            top: 4px;
+            right: 4px;
+          }
+
+          &:hover {
+            background: $indicator-fieldButton-borderColor-hover;
+          }
+
+          &[data-has-data="false"] {
+            display: none;
+            cursor: default;
+            &:hover {
+              background: $backgroundColor;
+            }
+            input {
+              display: none;
+            }
+          }
+        }
+      }
+
+      &.child {
+        margin-left: 20px;
+        width: calc(100% - 20px);
+      }
+
+      &[data-has-data="false"],
+      &.disallowed {
+        .bar {
+          display: none;
+        }
+
+        .variable-options {
+          > div {
+            display: none;
+          }
+
+          input {
+            display: none;
+          }
+
+          label {
+            cursor: default;
+            &:hover {
+              background: $backgroundColor;
+            }
+          }
+        }
+
+        padding-bottom: 5px;
+      }
+
+      &[data-has-data="false"]:not(.disallowed) {
+        .no-data-hint {
+          display: block;
+        }
+      }
+      &.disallowed {
+        .variable-hint {
+          display: block;
+        }
+      }
+    }
+  }
+  #units {
+    clear: left;
+    margin-bottom: 20px;
+
+    label {
+      font-weight: normal;
+      border: 1px solid $indicator-selector-borderColor;
+      padding: 10px;
+      margin-right: 8px;
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+
+  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  #dataset-size-warning {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    vertical-align: middle;
+    background: $indicator-datasetWarning-backgroundColor;
+    border-radius: 4px;
+    padding: 5px;
+
+    i {
+      font-size: 1.2em;
+    }
+  }
+
+  .plot-container {
+    margin-bottom: 4.5rem;
+    padding: 10px;
+  }
+
+  #chartSelectionDownload {
+    margin-bottom: 10px;
+    clear: left;
+  }
+
+  #legend {
+    padding-left: 0;
+    text-align: center;
+    margin-top: -32px;
+    li {
+      font-size: 13px;
+      list-style-type: none;
+      display: inline-block;
+      color: $indicator-legendSwatch-fillColor;
+      line-height: 18px;
+      cursor: pointer;
+      padding: 5px;
+
+      &:hover {
+        background: $indicator-legendSwatch-backgroundColor-hover;
+      }
+
+      &.notshown {
+        text-decoration: line-through;
+      }
+    }
+    .swatch {
+      display: inline-block;
+      width: 45px;
+      height: 15px;
+      margin-right: 3px;
+
+      &.dashed {
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAYAAADn9T9+AAAAFklEQVQImWP8////fwY0wMjIyIguBgCaAgQCms5tJwAAAABJRU5ErkJggg==');
+        background-repeat: repeat;
+        background-position: -5px 0;
+      }
+    }
+    span {
+      vertical-align: middle;
+      line-height: 18px;
+    }
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  canvas {
+    @include noselect;
+  }
+  .no-gutters img {
+    width: calc(100% - 10px);
+    border: 0;
+    padding: 0;
+    margin: 5px 10px 5px 0;
+
+    &:not(#goal-18){
+      box-shadow: 5px 5px 5px 0px $goalTiles-tile-shadowColor;
+
+      &:hover{
+        box-shadow: 5px 5px 5px 0px $goalTiles-tile-shadowColor-hover;
+      }
+    }
+  }
+
+  &.goal-indicators {
+    @include indicatorcards;
+    &.goal-by-target {
+      .indicator-cards a {
+        padding: 0;
+        margin-bottom: 2.5rem;
+
+        .tags li{
+          color: $color-dark;
+        }
+
+      }
+      .indicator-cards.target {
+        margin-bottom: 2.5rem;
+        clear: left;
+      }
+    }
+    .indicator-cards .tags li{
+      color: $color-dark;
+    }
+  }
+  .goal-indicators:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .nav-tabs {
+    border-bottom: 1px solid $indicator-tabs-borderColor;
+    .nav-item {
+      background: none;
+      border: none;
+      a {
+        border: none;
+        color: $color-dark;
+      }
+      &.active {
+        a {
+          border: 1px solid $indicator-tabs-borderColor;
+          border-bottom: 0;
+        }
+      }
+      &:not(.active){
+        a{
+          background-color: $indicator-tabs-backgroundColor-inactive;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .tab-content {
+    border: 1px solid $indicator-tabs-borderColor;
+    padding: 15px;
+    border-top:  0;
+
+    .tab-pane {
+      padding-top: 1.5rem;
+      // th {
+      //   width: 35%;
+      // }
+      #datatable {
+        overflow-x: auto;
+      }
+    }
+		h4 {
+			margin-top: 2rem !important;
+		}
+  }
+
+  #selectionsTable {
+    div.dataTables_wrapper {
+      overflow-x: auto;
+
+      .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    table {
+      thead th {
+        cursor: pointer;
+
+        span.sort {
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-color: transparent;
+          display: inline-block;
+          width: 24px;
+          height: 19px;
+          margin-bottom: -3px;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &.sorting_asc {
+          span.sort { background-image: url(../img/sort_asc.png); }
+        }
+        &.sorting_desc {
+          span.sort { background-image: url(../img/sort_desc.png); }
+        }
+      }
+      tbody th {
+        font-weight: normal;
+      }
+    }
+
+    padding-bottom: 20px;
+
+    .table-footer-text {
+      p {
+        font-size: 0.85em;
+        margin: 0 0 5px;
+      }
+      padding-left: 20px;
+    }
+  }
+
+  #selectionsChart {
+    padding-bottom: 20px;
+  }
+
+  #selectionChartFooter {
+    font-size: 12px;
+    line-height: 1.2;
+    padding-left: 20px;
+  }
+}
+
+.roleHeader {
+	cursor: pointer;
+}
+
+.chart-title {
+  text-align: center;
+}
+
+body.contrast-high {
+  #main-content #fields label {
+    background: $color-dark-highContrast;
+    color: $color-light-highContrast;
+    &:hover {
+      background: $color-light-highContrast;
+      color: $color-dark-highContrast;
+    }
+    &:focus {
+      background: $color-light-highContrast;
+      color: $color-dark-highContrast;
+    }
+  }
+
+  #toolbar {
+    button {
+      background-color: $color-dark-highContrast !important;
+      border-color: $color-light-highContrast;
+      color: $color-light-highContrast;
+    }
+  }
+
+  .variable-options {
+    background: $color-dark-highContrast;
+    color: $color-light-highContrast;
+    div {
+      background: $color-dark-highContrast;
+      color: $color-light-highContrast;
+    }
+    button {
+      background: $color-dark-highContrast;
+      color: $color-light-highContrast !important;
+      border-color: $color-light-highContrast;
+    }
+  }
+
+  #main-content #fields .bar .selected { background-color: $color-light-highContrast; }
+
+  #main-content #fields .variable-selector .variable-hint { color: $color-light-highContrast; }
+
+  caption {
+    color: $color-light-highContrast;
+  }
+
+  div#units {
+    color: $color-light-highContrast;
+  }
+
+  #legend {
+    li {
+      color: $color-light-highContrast !important;
+      border: 1px solid transparent;
+      &:hover {
+        background: transparent !important;
+        border: 1px solid $color-light-highContrast;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body.layout-indicator{
+    .container{
+      .goal-icon{
+        float: none;
+      }
+      .indicator-details {
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+}

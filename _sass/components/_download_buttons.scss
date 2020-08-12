@@ -1,0 +1,60 @@
+.btn-download {
+  margin-top: 1.5rem;
+  margin-right: 0.8rem;
+  border: none !important;
+  background: $button-color !important;
+  color: $button-foregroundColor !important;
+
+  &:hover, &:active, &:focus {
+    background: $button-color-pressed !important;
+  }
+  &:visited {
+    color: $button-foregroundColor-visited !important;
+  }
+}
+
+h5.download {
+  font-weight: bold;
+}
+
+h5 + .btn-download {
+  margin-top: 0.5rem;
+}
+
+.image-download-in-progress {
+  &, * {
+    padding: 0;
+    margin: 0;
+  }
+  #selectionChartFooter {
+    padding-left: 20px;
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.zip-download-container {
+  margin-top: 20px;
+  a.btn {
+    margin-left: 10px;
+  }
+  #zip-download-info {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+}
+
+body.contrast-high {
+  .btn { background: $color-light-highContrast !important; color: $color-dark-highContrast !important;
+    &:hover {
+      background: $color-highlight-highContrast !important;
+    }
+    &:focus {
+      background: $color-highlight-highContrast !important;
+    }
+  }
+  #zip-download-info {
+    color: $color-light-highContrast;
+  }
+}
