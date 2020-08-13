@@ -131,20 +131,20 @@ exclude:
   - LICENSE
 
 goals_page:
-    title: UK Metrics for Environmental Statistics
+    title: UK Climate Change-related Statistics
     description: Click on each topic area below to view our published Environmental Statistics data. [SITE IN PROGRESS]
 
 reporting_status:
-    description: UK Metrics for Environmental Statistics
+    description: UK Climate Change-related Statistics
 
 frontpage_introduction_banner:
-  title: UK Metrics for Environmental Statistics
+  title: UK Climate Change-related Statistics
   description: Click on each topic area below to view our published Environmental Statistics data. [SITE IN PROGRESS]
 
 
 # This controls the text that appears above the goals grid.
 frontpage_goals_grid:
-  title: UK Metrics for Environmental Statistics
+  title: UK Climate Change-related Statistics
   description: Click on each topic area below to view our published Environmental Statistics data. [SITE IN PROGRESS]
 
 
