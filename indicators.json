@@ -670,4 +670,20 @@
           "status": "notstarted"
         }]
     }
+  },
+  {
+    "goal": {
+      "id": "7",
+      "title": "Contextual",
+      "indicators": [
+        
+        {
+          "id": "7-1-1",
+          "title": "Contextual metric 1",
+          "description": "",
+          "keywords": "",
+          "href": "/envmetric-site/7-1-1",
+          "status": "notstarted"
+        }]
+    }
   }]
