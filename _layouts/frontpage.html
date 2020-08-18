@@ -20,13 +20,14 @@
     {% comment %}
         Stretch Goal/Area 7 (Contextual) to full width
     {% endcomment %}
-    {% for goal in page.goals - 1 %}
+    {% for goal in page.goals %}
         {% cycle 'add row' : '<div class="row no-gutters">', '', '', '', '', '' %}
             {% if goal == 7 %}
                 <div class="col-xs-12 col-md-12">
-                    <a href="{{ https://norric1admin.github.io/envmetric-site/7 }}"> 
-                    <img src="{{ site.goal_image_base }}/{{ page.language }}/7.png" id="goal-7" alt="Contextual" />
+                    <a href="{{ goal.url }}">
+                    <img src="{{ goal.icon }}" id="goal-{{ goal.number }}" alt="{{ goal.short | escape }} - {{ page.t.general.goal }} {{ goal.number }}" />
                     </a>
+                </div>
                 </div>
             {% else %}
                 <div class="col-xs-4 col-md-2">
