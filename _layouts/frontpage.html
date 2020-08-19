@@ -17,29 +17,27 @@
     <p class="spacer medium">{{ site.frontpage_instructions | default: instructions_default | t }}</p>
 
     <div class="goal-tiles">
-    {% comment %}
-        Stretch Goal/Area 7 (Contextual) to full width
-    {% endcomment %}
     {% for goal in page.goals %}
-        {% cycle 'add row' : '<div class="row no-gutters">', '', '', '', '', '' %}
-            {% if goal.length != 7 %}
+        {% if (goal > 6) break %}
+        {% else %}
+            {% cycle 'add row' : '<div class="row no-gutters">', '', '', '', '', '' %}
                 <div class="col-xs-4 col-md-2">
                     <a href="{{ goal.url }}">
                     <img src="{{ goal.icon }}" id="goal-{{ goal.number }}" alt="{{ goal.short | escape }} - {{ page.t.general.goal }} {{ goal.number }}" />
                     </a>
                 </div>
-            {% else %}
-                <div class="col-xs-12 col-md-12">
-                    <a href="{{ goal.url }}">
-                    <img src="{{ goal.icon }}" id="goal-{{ goal.number }}" alt="{{ goal.short | escape }} - {{ page.t.general.goal }} {{ goal.number }}" />
-                    </a>
-                </div>
-            {% endif %}
-        {% cycle 'end row' : '', '', '', '', '', '</div>' %}
+            {% cycle 'end row' : '', '', '', '', '', '</div>' %}
+        {% endif %}   
     {% endfor %}
-
-    </div>
-    </div>
+    {% comment %}
+        Stretch Goal/Area 7 (Contextual) to full width
+    {% endcomment %}
+        <div class="col-xs-12 col-md-12">
+            <a href="{{ goal.url }}">
+            <img src="{{ goal.icon }}" id="goal-{{ goal.number }}" alt="{{ goal.short | escape }} - {{ page.t.general.goal }} {{ goal.number }}" />
+            </a>
+        </div>        
     {% include components/download-all-data.html %}
-</div>
+    </div>
+    
 {% include footer.html %}
