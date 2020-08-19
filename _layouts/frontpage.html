@@ -18,7 +18,8 @@
 
     <div class="goal-tiles">
     {% for goal in page.goals %}
-        {% if (goal.number > 6) break %}
+        {% if goal.number > 6 %}
+            {% break %}
         {% else %}
             {% cycle 'add row' : '<div class="row no-gutters">', '', '', '', '', '' %}
                 <div class="col-xs-4 col-md-2">
