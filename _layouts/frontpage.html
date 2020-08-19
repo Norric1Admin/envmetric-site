@@ -17,23 +17,29 @@
     <p class="spacer medium">{{ site.frontpage_instructions | default: instructions_default | t }}</p>
 
     <div class="goal-tiles">
-    {% for goal in 1:6 %}
-        {% cycle 'add row' : '<div class="row no-gutters">', '', '', '', '', '' %}
+    {% for goal in page.goals %}
+        {% if (goal.number >= 6) %}
+            {% cycle 'add row' : '<div class="row no-gutters">', '', '', '', '', '' %}
                 <div class="col-xs-4 col-md-2">
                     <a href="{{ goal.url }}">
                     <img src="{{ goal.icon }}" id="goal-{{ goal.number }}" alt="{{ goal.short | escape }} - {{ page.t.general.goal }} {{ goal.number }}" />
                     </a>
                 </div>
-        {% cycle 'end row' : '', '', '', '', '', '</div>' %}  
-    {% endfor %}
+            {% cycle 'end row' : '', '', '', '', '', '</div>' %}
+        {% else %}
     {% comment %}
         Stretch Goal/Area 7 (Contextual) to full width
     {% endcomment %}
+        {% cycle 'add row' : '<div class="row no-gutters">', '', '', '', '', '' %}
         <div class="col-xs-12 col-md-12">
-            <a href="{{ https://norric1admin.github.io/envmetric-site/7 }}">
-            <img src="{{ site.goal_image_base }}/{{ page.language }}/7.png" id="goal-7" alt="Contextual" />
+            <a href="{{ goal.url }}">
+            <img src="{{ goal.icon }}" id="goal-{{ goal.number }}" alt="{{ goal.short | escape }} - {{ page.t.general.goal }} {{ goal.number }}" />
             </a>
-        </div>        
+        </div>
+        {% cycle 'end row' : '', '', '', '', '', '</div>' %}
+        {% endif %}   
+    {% endfor %}
+    
     {% include components/download-all-data.html %}
     </div>
     
