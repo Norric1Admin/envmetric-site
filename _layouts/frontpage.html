@@ -17,18 +17,14 @@
     <p class="spacer medium">{{ site.frontpage_instructions | default: instructions_default | t }}</p>
 
     <div class="goal-tiles">
-    {% for goal in page.goals %}
-        {% if goal.number.to_i > 6 %}
-            {% break %}
-        {% else %}
-            {% cycle 'add row' : '<div class="row no-gutters">', '', '', '', '', '' %}
+    {% for goal in 1:6 %}
+        {% cycle 'add row' : '<div class="row no-gutters">', '', '', '', '', '' %}
                 <div class="col-xs-4 col-md-2">
                     <a href="{{ goal.url }}">
                     <img src="{{ goal.icon }}" id="goal-{{ goal.number }}" alt="{{ goal.short | escape }} - {{ page.t.general.goal }} {{ goal.number }}" />
                     </a>
                 </div>
-            {% cycle 'end row' : '', '', '', '', '', '</div>' %}
-        {% endif %}   
+        {% cycle 'end row' : '', '', '', '', '', '</div>' %}  
     {% endfor %}
     {% comment %}
         Stretch Goal/Area 7 (Contextual) to full width
