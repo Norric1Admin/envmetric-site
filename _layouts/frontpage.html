@@ -38,8 +38,9 @@
                 </div>
                 <div class="col-xs-8 col-md-10">
                     <h2> {{ goal.number }} - {{ goal.short | escape }} </h2><br>
-                    <p> {{ goal.title }} </p><br><br><br><br>
+                    <p> {{ goal.title }}
                 </div>
+                <div class="clearfix visible-xs"></div>
             {% cycle 'end row' : '', '', '', '', '', '</div>' %}
         {% endif %}   
     {% endfor %}
