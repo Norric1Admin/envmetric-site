@@ -38,7 +38,7 @@
                 </div>
                 <div class="col-8 col-md-10">
                     <h2> {{ goal.number }} - {{ goal.short | escape }} </h2>
-                    <p> {{ goal.title | escape }} <br><br>
+                    <p> {{ goal.short | escape }} <br><br>
                 </div>
             {% cycle 'end row' : '', '', '', '', '', '</div>' %}
         {% endif %}   
