@@ -31,16 +31,15 @@
         {% cycle 'end row' : '', '', '', '', '', '</div>' %}
         {% else %}
             {% cycle 'add row' : '<div class="row no-gutters">', '', '', '', '', '' %}
-                <div class="col-6 col-md-4">
+                <div class="col-2 col-md-1">
                     <a href="{{ goal.url }}">
                     <img src="{{ goal.icon }}" id="goal-{{ goal.number }}" alt="{{ goal.short | escape }} - {{ page.t.general.goal }} {{ goal.number }}" />
                     </a>
                 </div>
-                <div class="col-12 col-md-8">
+                <div class="col-10 col-md-11">
                     <h2> {{ goal.number }} - {{ goal.short | escape }} </h2><br>
-                    <p> {{ goal.title }}
+                    <p> TEXT <br><br>
                 </div>
-                <div class="clearfix visible-xs"></div>
             {% cycle 'end row' : '', '', '', '', '', '</div>' %}
         {% endif %}   
     {% endfor %}
