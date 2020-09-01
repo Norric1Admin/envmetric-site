@@ -31,12 +31,12 @@
         {% cycle 'end row' : '', '', '', '', '', '</div>' %}
         {% else %}
             {% cycle 'add row' : '<div class="row no-gutters">', '', '', '', '', '' %}
-                <div class="col-xs-4 col-md-2">
+                <div class="col-6 col-md-4">
                     <a href="{{ goal.url }}">
                     <img src="{{ goal.icon }}" id="goal-{{ goal.number }}" alt="{{ goal.short | escape }} - {{ page.t.general.goal }} {{ goal.number }}" />
                     </a>
                 </div>
-                <div class="col-xs-8 col-md-10">
+                <div class="col-12 col-md-8">
                     <h2> {{ goal.number }} - {{ goal.short | escape }} </h2><br>
                     <p> {{ goal.title }}
                 </div>
