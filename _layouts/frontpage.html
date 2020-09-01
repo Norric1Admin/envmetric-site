@@ -36,6 +36,9 @@
                     <img src="{{ goal.icon }}" id="goal-{{ goal.number }}" alt="{{ goal.short | escape }} - {{ page.t.general.goal }} {{ goal.number }}" />
                     </a>
                 </div>
+                <div class="col-xs-6 col-md-6">
+                    <h2>{{ goal.number } - {{ goal.short | escape }}</h2>
+                </div>
             {% cycle 'end row' : '', '', '', '', '', '</div>' %}
         {% endif %}   
     {% endfor %}
