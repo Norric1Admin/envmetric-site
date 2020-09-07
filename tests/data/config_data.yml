@@ -4,8 +4,6 @@
 # List of languages.
 languages:
   - en
-  - es
-  - fr
 
 # Where the data gets built.
 site_dir: _build
