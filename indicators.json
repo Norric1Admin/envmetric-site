@@ -144,10 +144,10 @@
         {
           "id": "3-5-2",
           "title": "Energy intensity (TBC)",
-          "description": "",
+          "description": "Energy intensity is an indication of how much energy is used to produce one unit of economic output, based on Gross Value Added (GVA) in constant prices.",
           "keywords": "",
           "href": "/envmetric-site/3-5-2",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "3-5-3",
@@ -289,9 +289,9 @@
           "id": "5-1-1",
           "title": "Footprints",
           "description": "",
-          "keywords": "",
+          "keywords": "material footprint, environment",
           "href": "/envmetric-site/5-1-1",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "5-1-2",
@@ -369,17 +369,17 @@
           "id": "5-4-3",
           "title": "Number of countries with sustainable consumption and production (SCP) national action plans or SCP mainstreamed as a priority or a target into national policies",
           "description": "",
-          "keywords": "",
+          "keywords": "Non-statistical, legislation, policy, environment",
           "href": "/envmetric-site/5-4-3",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "5-4-4",
           "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development (including climate change education) are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
           "description": "",
-          "keywords": "",
+          "keywords": "Non-statistical, legislation, policy",
           "href": "/envmetric-site/5-4-4",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "5-4-5",
@@ -392,10 +392,10 @@
         {
           "id": "5-4-6",
           "title": "Proportion of national exclusive economic zones managed using ecosystem-based approaches",
-          "description": "",
+          "description": "The extent measures are a calculation of the net (non-overlapping) extent of protected areas using mean high water as the boundary between the at-sea and on-land measures. The proportion measures are a percentage of UK marine extent contained within marine protected areas.",
           "keywords": "",
           "href": "/envmetric-site/5-4-6",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "5-4-7",
@@ -409,15 +409,15 @@
           "id": "5-4-8",
           "title": "Progress towards sustainable forest management",
           "description": "",
-          "keywords": "",
+          "keywords": "forest, sustainability, forests, sustainable, woodland",
           "href": "/envmetric-site/5-4-8",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "5-5-1",
           "title": "Investments in energy efficiency as a proportion of GDP and the amount of foreign direct investment in financial transfer for infrastructure and technology to sustainable development services",
           "description": "",
-          "keywords": "",
+          "keywords": "Energy, Renewable, Low carbon, Exports, GDP, Environmental Accounts, Environment, Sustainable Development",
           "href": "/envmetric-site/5-5-1",
           "status": "notstarted"
         },
