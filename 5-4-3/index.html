@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/envmetric-site/assets/css/style.css?v=20200908183214">
+        <link rel="stylesheet" href="/envmetric-site/assets/css/style.css?v=20200908190032">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -300,8 +300,7 @@ var translations = {
 
 <p><a href="https://gov.wales/towards-zero-waste-our-waste-strategy">Towards zero waste - our waste strategy</a> - This is Wales’ long term aim for resource efficiency and waste management.</p>
 
-<p><a href="https://www.gov.scot/publications/making-things-last-circular-economy-strategy-scotland/">Making Things Last - a circular economy strategy for Scotland</a> - This strategy sets out priorities for moving towards a more circular economy where products and materials are kept in high value use for as long as possible. It builds on Scotland’s progress in the zero waste and resource efficiency agendas.                                                                                                            <br />
-We have also identified the following policies relevant to this indicator - <a href="https://www.legislation.gov.uk/ukpga/2008/27/contents">Climate Change Act</a> and <a href="https://www.gov.uk/government/publications/uk-climate-change-risk-assessment-2017">UK Climate Change Risk Assessment 2017</a>.</p>
+<p><a href="https://www.gov.scot/publications/making-things-last-circular-economy-strategy-scotland/">Making Things Last - a circular economy strategy for Scotland</a> - This strategy sets out priorities for moving towards a more circular economy where products and materials are kept in high value use for as long as possible. It builds on Scotland’s progress in the zero waste and resource efficiency agendas.</p>
 
   </div>
 </div>
@@ -327,7 +326,7 @@ We have also identified the following policies relevant to this indicator - <a h
   data-copyright=""
   data-geographicalarea=""
   data-footnote=""
-  data-showdata="true"
+  data-showdata="false"
   data-graphtype="line"
   data-geocoderegex=""
   data-showmap=""
@@ -336,188 +335,7 @@ We have also identified the following policies relevant to this indicator - <a h
   data-stackeddisaggregation=""
 >
   
-  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
-    <div id="units"></div>
-<div id="toolbar">
-  <span id="series-help">
-    <h4>Sub-categories</h4>
-    <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
-  </span>
-  <p id="legend-help">Click on the legend to remove individual lines from the chart.</p>
-  <div id="fields">
-    <p class="async-loading" data-img="/envmetric-site/assets/img/loading-small.gif"></p>
-  </div>
-</div>
-
-  </div>
-  <div id="indicator-main" class="indicator-main col-md-9">
-    
-
-
-<div id="headlineTable">
-
-  <div id="datatables">
-
-    <a href="https://Norric1Admin.github.io/envmetric-data/en/headline/5-4-3.csv" class="btn btn-primary btn-download" download="indicator_5-4-3.csv" tabindex="0" role="button">Download Headline CSV</a>
-
-    <a href="https://Norric1Admin.github.io/envmetric-data/en/data/5-4-3.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_5-4-3.csv' tabindex='0' role='button'>Download Source CSV</a>
-
-    <h3>Headline data</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Number of countries with sustainable consumption and production (SCP) national action plans or SCP mainstreamed as a priority or a target into national policies</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2015</td>
-          
-          
-          
-          <td class="table-value">2</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2016</td>
-          
-          
-          
-          <td class="table-value">2</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
-  </div>
-
-  <div id="datatableFooter">
-    
-    
-    
-    
-  </div>
-
-</div>
-
-
-<section>
-
-  <p class="async-loading" data-img="/envmetric-site/assets/img/loading-small.gif"></p>
-
-  <div class="async-loaded spacer medium" style="display:none;">
-
-    <ul class="nav nav-tabs data-view" role="tablist">
-  <li role="presentation" class="nav-item active">
-    <a class="nav-link" data-toggle="tab" href="#chartview" aria-controls="chartview" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Chart tab"
->Chart</a>
-  </li>
-  <li role="presentation" class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#tableview" aria-controls="tableview" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Table tab"
->Table</a>
-  </li>
-  <li role="presentation" class="nav-item map" style="display:none">
-    <a data-no-disagg="true" class="nav-link" data-toggle="tab" href="#mapview" aria-controls="mapview" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Map tab"
->Map</a>
-  </li></ul>
-
-    <div class="tab-content data-view">
-  <div role="tabpanel" class="tab-pane active" id="chartview">
-    
-
-    <div id="dataset-size-warning" style="display:none">
-      <i class="fa fa-bolt"></i> There are too many datasets to show on the chart. Not all will be shown until you remove some selections.
-    </div>
-
-    
-    <div id="selectionsChart">
-      <div id="chart-canvas">
-        <h3 class="chart-title">
-          
-            Number of countries with sustainable consumption and production (SCP) national action plans or SCP mainstreamed as a priority or a target into national policies
-          
-        </h3>
-        <div id="chart" class="plot-container">
-          
-<canvas></canvas>
-<script>
-// Add a chart alteration to support the chart_graph_limits metadata field.
-opensdg.chartConfigAlter(function(config, info) {
-  if (info.graphLimits) {
-    var limit = _.findWhere(info.graphLimits, { unit: info.selectedUnit }) || info.graphLimits[0];
-    var overrides = {
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              min: limit.minimum,
-              max: limit.maximum,
-            }
-          }]
-        }
-      }
-    }
-    // Add these overrides onto the normal config.
-    $.extend(true, config, overrides);
-  }
-});
-</script>
-
-
-        </div>
-        <div id="plotLegend"></div>
-      </div>
-      <button id="btnSave" title="Download chart as image" class='btn btn-primary btn-download'>
-        Download Chart Image
-      </button>
-    </div>
-    <div id="chartSelectionDownload"></div>
-
-
-
-  </div>
-  <div role="tabpanel" class="tab-pane" id="tableview">
-    <div id="selectionsTable"></div>
-
-  </div>
-  <div role="tabpanel" class="tab-pane" id="mapview" class="map">
-    <div id="map">
-  <img src="/envmetric-site/assets/img/loading.gif" alt="Loading map" />
-</div>
-
-  </div>
-  
-</div>
-
-
-  </div>
-
-</section>
-
+  <div id="indicator-main" class="indicator-main col-md-12">
   
   <ul class="nav nav-tabs spacer medium" role="tablist">
 
@@ -770,7 +588,7 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/Norric1Admin/envmetric-data/commit/d2076001df506df75104c5bf625048714ebbb3b8" target="_blank">
+              <a href="https://github.com/Norric1Admin/envmetric-data/commit/151ea6cfd9e786190c766f22708356dc62b67cda" target="_blank">
                 2020-09-08: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
@@ -1206,7 +1024,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/envmetric-site/assets/js/sdg.js?v=20200908183214'></script><script>
+<script src='/envmetric-site/assets/js/sdg.js?v=20200908190032'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();
