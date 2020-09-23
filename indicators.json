@@ -2,7 +2,7 @@
   {
     "goal": {
       "id": "1",
-      "title": "Climate and weather description",
+      "title": "Metrics relating to the UK climate series and projections, and the impacts of climate-related disasters.",
       "indicators": [
         
         {
@@ -42,12 +42,12 @@
   {
     "goal": {
       "id": "2",
-      "title": "Emissions description",
+      "title": "Metrics relating to atmospheric pollutants, and other forms of hazardous and non-hazardous waste.",
       "indicators": [
         
         {
           "id": "2-1-1",
-          "title": "Estimated territorial greenhouse gas emissions by gas",
+          "title": "Estimated greenhouse gas and short-lived climate pollutant (SLCP) emissions",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/2-1-1",
@@ -55,7 +55,7 @@
         },
         {
           "id": "2-1-2",
-          "title": "UK annual emissions of some pollutants / Concentrations in the atmosphere (TBC)",
+          "title": "CO2 emissions per unit of value added",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/2-1-2",
@@ -63,7 +63,7 @@
         },
         {
           "id": "2-1-3",
-          "title": "global_indicators.2-1-3-title",
+          "title": "Concentrations of other (non-climate-forcing) pollutants",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/2-1-3",
@@ -71,7 +71,7 @@
         },
         {
           "id": "2-2-1",
-          "title": "global_indicators.2-2-1-title",
+          "title": "Urban solid waste",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/2-2-1",
@@ -79,7 +79,7 @@
         },
         {
           "id": "2-2-2",
-          "title": "global_indicators.2-2-2-title",
+          "title": "Hazardous waste and chemicals",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/2-2-2",
@@ -90,7 +90,7 @@
   {
     "goal": {
       "id": "3",
-      "title": "Drivers description",
+      "title": "Metrics detailing the various factors that contribute to climate change in the UK.",
       "indicators": [
         
         {
@@ -127,7 +127,7 @@
         },
         {
           "id": "3-4-1",
-          "title": "Population (historic)",
+          "title": "Energy supply by source",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/3-4-1",
@@ -135,7 +135,7 @@
         },
         {
           "id": "3-4-2",
-          "title": "Population (projections)",
+          "title": "Energy intensity",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/3-4-2",
@@ -143,7 +143,7 @@
         },
         {
           "id": "3-4-3",
-          "title": "global_indicators.3-4-3-title",
+          "title": "Energy and pollution consumption",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/3-4-3",
@@ -151,7 +151,7 @@
         },
         {
           "id": "3-4-4",
-          "title": "global_indicators.3-4-4-title",
+          "title": "Footprints",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/3-4-4",
@@ -159,7 +159,7 @@
         },
         {
           "id": "3-5-3",
-          "title": "Energy and pollution consumption (TBC)",
+          "title": "global_indicators.3-5-3-title",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/3-5-3",
@@ -170,7 +170,7 @@
   {
     "goal": {
       "id": "4",
-      "title": "Impacts description",
+      "title": "Metrics detailing the impacts of climate change in the UK.",
       "indicators": [
         
         {
@@ -247,7 +247,7 @@
         },
         {
           "id": "4-3-1",
-          "title": "Water",
+          "title": "Water ecosystem condition",
           "description": "This indicator shows the percentage of surface water bodies in the UK awarded a good or high surface water status classification under the Water Framework Directive. The purpose of the Water Framework Directive is to establish a framework for the protection of inland surface waters, estuaries, coastal waters and groundwater. The framework for delivering the Directive is through River Basin Management Planning. The UK has been split into several River Basin Districts. Each River Basin District has been characterised into smaller management units known as Water Bodies. The surface Water Bodies may be rivers, lakes, estuary or coastal. Surface water status is measured by both its ecological and chemical status. It is assessed against the scale of high, good, moderate, poor and bad. The results published each year relate to data reported in that year under the Water Framework Directive.",
           "keywords": "Water quality",
           "href": "/envmetric-site/4-3-1",
@@ -255,7 +255,7 @@
         },
         {
           "id": "4-3-2",
-          "title": "Seas and Estuaries",
+          "title": "Marine and estuarine  ecosystem condition",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/4-3-2",
@@ -263,7 +263,7 @@
         },
         {
           "id": "4-3-3",
-          "title": "Wildlife",
+          "title": "Biodiversity",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/4-3-3",
@@ -290,12 +290,12 @@
   {
     "goal": {
       "id": "5",
-      "title": "Mitigation description",
+      "title": "Metrics detailing the projects and strategies being used to mitigate climate change in the UK.",
       "indicators": [
         
         {
           "id": "5-1-1",
-          "title": "Footprints",
+          "title": "Sustainable household expenditure",
           "description": "",
           "keywords": "material footprint, environment",
           "href": "/envmetric-site/5-1-1",
@@ -303,7 +303,7 @@
         },
         {
           "id": "5-1-2",
-          "title": "Sustainable household expenditure",
+          "title": "Circular economy",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/5-1-2",
@@ -335,7 +335,7 @@
         },
         {
           "id": "5-3-1",
-          "title": "Population projection",
+          "title": "Number of countries with sustainable consumption and production (SCP) national action plans or SCP mainstreamed as a priority or a target into national policies",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/5-3-1",
@@ -343,7 +343,7 @@
         },
         {
           "id": "5-3-2",
-          "title": "Variables that transform the projections",
+          "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development (including climate change education) are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/5-3-2",
@@ -351,7 +351,7 @@
         },
         {
           "id": "5-3-3",
-          "title": "global_indicators.5-3-3-title",
+          "title": "Number of countries that have communicated the strengthening of institutional, systemic and individual capacity-building to implement adaptation, mitigation and technology transfer, and development actions",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/5-3-3",
@@ -359,7 +359,7 @@
         },
         {
           "id": "5-3-4",
-          "title": "global_indicators.5-3-4-title",
+          "title": "Proportion of national exclusive economic zones managed using ecosystem-based approaches",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/5-3-4",
@@ -367,7 +367,7 @@
         },
         {
           "id": "5-3-5",
-          "title": "global_indicators.5-3-5-title",
+          "title": "Progress by countries in the degree of implementation of international instruments aiming to combat illegal, unreported and unregulated fishing",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/5-3-5",
@@ -375,7 +375,7 @@
         },
         {
           "id": "5-3-6",
-          "title": "global_indicators.5-3-6-title",
+          "title": "Progress towards sustainable forest management",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/5-3-6",
@@ -383,7 +383,7 @@
         },
         {
           "id": "5-3-7",
-          "title": "global_indicators.5-3-7-title",
+          "title": "Number of companies publishing sustainability reports",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/5-3-7",
@@ -391,7 +391,7 @@
         },
         {
           "id": "5-4-1",
-          "title": "Climate change mitigation expenditure",
+          "title": "Terrestrial protected area",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/5-4-1",
@@ -399,7 +399,7 @@
         },
         {
           "id": "5-4-2",
-          "title": "Green R&D",
+          "title": "Marine protected area",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/5-4-2",
@@ -407,39 +407,15 @@
         },
         {
           "id": "5-4-3",
-          "title": "Number of countries with sustainable consumption and production (SCP) national action plans or SCP mainstreamed as a priority or a target into national policies",
+          "title": "Freshwater protected area",
           "description": "",
           "keywords": "Non-statistical, legislation, policy, environment",
           "href": "/envmetric-site/5-4-3",
           "status": "complete"
         },
         {
-          "id": "5-4-6",
-          "title": "Proportion of national exclusive economic zones managed using ecosystem-based approaches",
-          "description": "The extent measures are a calculation of the net (non-overlapping) extent of protected areas using mean high water as the boundary between the at-sea and on-land measures. The proportion measures are a percentage of UK marine extent contained within marine protected areas.",
-          "keywords": "",
-          "href": "/envmetric-site/5-4-6",
-          "status": "complete"
-        },
-        {
-          "id": "5-4-7",
-          "title": "Progress by countries in the degree of implementation of international instruments aiming to combat illegal, unreported and unregulated fishing",
-          "description": "",
-          "keywords": "",
-          "href": "/envmetric-site/5-4-7",
-          "status": "notstarted"
-        },
-        {
-          "id": "5-4-8",
-          "title": "Progress towards sustainable forest management",
-          "description": "",
-          "keywords": "forest, sustainability, forests, sustainable, woodland",
-          "href": "/envmetric-site/5-4-8",
-          "status": "complete"
-        },
-        {
           "id": "5-5-1",
-          "title": "Investments in energy efficiency as a proportion of GDP and the amount of foreign direct investment in financial transfer for infrastructure and technology to sustainable development services",
+          "title": "Climate change mitigation expenditure",
           "description": "",
           "keywords": "Energy, Renewable, Low carbon, Exports, GDP, Environmental Accounts, Environment, Sustainable Development",
           "href": "/envmetric-site/5-5-1",
@@ -447,7 +423,7 @@
         },
         {
           "id": "5-5-2",
-          "title": "Amount of fossil-fuel subsidies per unit of GDP (production and consumption) and as a proportion of total national expenditure on fossil fuels",
+          "title": "Green R&D",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/5-5-2",
@@ -455,18 +431,10 @@
         },
         {
           "id": "5-5-3",
-          "title": "Official development assistance and public expenditure on conservation and sustainable use of biodiversity and ecosystems",
+          "title": "Investments in energy efficiency as a proportion of GDP and the amount of foreign direct investment in financial transfer for infrastructure and technology to sustainable development services",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/5-5-3",
-          "status": "notstarted"
-        },
-        {
-          "id": "5-5-4",
-          "title": "global_indicators.5-5-4-title",
-          "description": "",
-          "keywords": "",
-          "href": "/envmetric-site/5-5-4",
           "status": "notstarted"
         }]
     }
@@ -474,7 +442,7 @@
   {
     "goal": {
       "id": "6",
-      "title": "Adaption description",
+      "title": "Metrics detailing the measures being used to build resilience and adapt to the effects of climate change in the UK.",
       "indicators": [
         
         {
@@ -698,12 +666,12 @@
   {
     "goal": {
       "id": "7",
-      "title": "Contextual description",
+      "title": "Metrics that fall outside the scope of the other categories, but relate to them and provide useful context.",
       "indicators": [
         
         {
           "id": "7-1-1",
-          "title": "Temperature",
+          "title": "Historic population",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/7-1-1",
@@ -711,7 +679,7 @@
         },
         {
           "id": "7-1-2",
-          "title": "global_indicators.7-1-2-title",
+          "title": "Population projections",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/7-1-2",
@@ -719,7 +687,7 @@
         },
         {
           "id": "7-1-3",
-          "title": "global_indicators.7-1-3-title",
+          "title": "Population growth projections",
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/7-1-3",
