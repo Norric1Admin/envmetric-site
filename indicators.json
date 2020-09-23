@@ -22,14 +22,6 @@
           "status": "notstarted"
         },
         {
-          "id": "1-2-2",
-          "title": "Global indicators (TBC)",
-          "description": "",
-          "keywords": "",
-          "href": "/envmetric-site/1-2-2",
-          "status": "notstarted"
-        },
-        {
           "id": "1-3-1",
           "title": "Severe weather events",
           "description": "",
@@ -134,14 +126,6 @@
           "status": "notstarted"
         },
         {
-          "id": "3-3-3",
-          "title": "Extent of protected area (TBC)",
-          "description": "",
-          "keywords": "",
-          "href": "/envmetric-site/3-3-3",
-          "status": "notstarted"
-        },
-        {
           "id": "3-4-1",
           "title": "Population (historic)",
           "description": "",
@@ -171,22 +155,6 @@
           "description": "",
           "keywords": "",
           "href": "/envmetric-site/3-4-4",
-          "status": "complete"
-        },
-        {
-          "id": "3-5-1",
-          "title": "Energy supply by source (TBC)",
-          "description": "",
-          "keywords": "",
-          "href": "/envmetric-site/3-5-1",
-          "status": "notstarted"
-        },
-        {
-          "id": "3-5-2",
-          "title": "Energy intensity (TBC)",
-          "description": "Energy intensity is an indication of how much energy is used to produce one unit of economic output, based on Gross Value Added (GVA) in constant prices.",
-          "keywords": "",
-          "href": "/envmetric-site/3-5-2",
           "status": "complete"
         },
         {
@@ -342,14 +310,6 @@
           "status": "notstarted"
         },
         {
-          "id": "5-1-3",
-          "title": "Circular economy",
-          "description": "",
-          "keywords": "",
-          "href": "/envmetric-site/5-1-3",
-          "status": "notstarted"
-        },
-        {
           "id": "5-2-1",
           "title": "Green jobs",
           "description": "",
@@ -452,22 +412,6 @@
           "keywords": "Non-statistical, legislation, policy, environment",
           "href": "/envmetric-site/5-4-3",
           "status": "complete"
-        },
-        {
-          "id": "5-4-4",
-          "title": "Extent to which (i) global citizenship education and (ii) education for sustainable development (including climate change education) are mainstreamed in (a) national education policies; (b) curricula; (c) teacher education; and (d) student assessment",
-          "description": "",
-          "keywords": "Non-statistical, legislation, policy",
-          "href": "/envmetric-site/5-4-4",
-          "status": "complete"
-        },
-        {
-          "id": "5-4-5",
-          "title": "Number of countries that have communicated the strengthening of institutional, systemic and individual capacity-building to implement adaptation, mitigation and technology transfer, and development actions",
-          "description": "",
-          "keywords": "",
-          "href": "/envmetric-site/5-4-5",
-          "status": "notstarted"
         },
         {
           "id": "5-4-6",
