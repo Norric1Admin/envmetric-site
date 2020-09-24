@@ -80,9 +80,9 @@ collections:
 # Menu
 menu:
   # Use these to customise the main navigation.
-  - path: /reporting-status
+  - path: /
     # The "translation_key" refers to the key in the SDG Translations repository.
-    translation_key: menu.reporting_status
+    translation_key: menu.home
   - path: /about
     translation_key: menu.about
   - path: /guidance
