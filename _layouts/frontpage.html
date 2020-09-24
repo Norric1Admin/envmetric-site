@@ -11,7 +11,6 @@
 
     {% assign country_name = site.country.name | t %}
     {% assign heading_default = page.t.frontpage.heading | replace: '%name', country_name %}
-    <h2 class="spacer medium">{{ site.frontpage_heading | default: heading_default | t }}</h2>
 
     {% assign instructions_default = page.t.frontpage.instructions | replace_first: '%before_link', '<span id="jump-to-search"><a>' | replace_first: '%after_link', '</a></span>' | replace_first: '%name', country_name %}
     <p class="spacer medium">{{ site.frontpage_instructions | default: instructions_default | t }}</p>
