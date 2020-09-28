@@ -122,7 +122,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/envmetric-site/assets/css/style.css?v=20200928115102">
+        <link rel="stylesheet" href="/envmetric-site/assets/css/style.css?v=20200928122343">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -298,14 +298,14 @@ var translations = {
   data-indicatorid='indicator_5-1-1'
   data-id="5-1-1"
   data-country="United Kingdom"
-  data-charttitle="Material footprint, material footprint per capita, and material footprint per GDP"
+  data-charttitle="Sustainable household expenditure"
   data-charttitles="null"
-  data-measurementunit="Million metric tonnes, Tonnes per capita, Tonnes per GDP (£m)"
+  data-measurementunit=""
   data-datasource="Office for National Statistics (ONS)"
   data-copyright=""
   data-geographicalarea="United Kingdom"
-  data-footnote="The level of material footprint for the Eurostat approach is shown excluding imports and exports of precious metals. Precious metals (particularly gold) have a high RME factor, so can have distinctive impact on the results. This is particularly true for the UK, who are responsible for more than three quarters of the EU’s imports of gold. While the impact is minimal at the total level, it is more evident when looking at the material footprint of metal ores."
-  data-showdata="true"
+  data-footnote=""
+  data-showdata="false"
   data-graphtype="line"
   data-geocoderegex=""
   data-showmap=""
@@ -314,196 +314,7 @@ var translations = {
   data-stackeddisaggregation=""
 >
   
-  <div id="indicator-sidebar" class="indicator-sidebar col-md-3">
-    <div id="units"></div>
-<div id="toolbar">
-  <span id="series-help">
-    <h4>Sub-categories</h4>
-    <p>Choose categories from the dropdowns below to see different breakdowns of the data. Some will not be available until a higher level is chosen.</p>
-  </span>
-  <p id="legend-help">Click on the legend to remove individual lines from the chart.</p>
-  <div id="fields">
-    <p class="async-loading" data-img="/envmetric-site/assets/img/loading-small.gif"></p>
-  </div>
-</div>
-
-  </div>
-  <div id="indicator-main" class="indicator-main col-md-9">
-    
-
-
-<div id="headlineTable">
-
-  <div id="datatables">
-
-    <a href="https://Norric1Admin.github.io/envmetric-data/en/headline/5-1-1.csv" class="btn btn-primary btn-download" download="indicator_5-1-1.csv" tabindex="0" role="button">Download Headline CSV</a>
-
-    <a href="https://Norric1Admin.github.io/envmetric-data/en/data/5-1-1.csv" class="btn btn-primary btn-download" style='float:left;margin-right:1em' download='indicator_5-1-1.csv' tabindex='0' role='button'>Download Source CSV</a>
-
-    <h3>Headline data</h3>
-    <table class="table-responsive table table-hover dataTable no-footer" role="grid">
-      <caption>Material footprint, material footprint per capita, and material footprint per GDP</caption>
-      <thead>
-        
-        
-        <th scope="col">Year</th>
-        
-        
-        
-        <th scope="col" class="table-value">Value</th>
-        
-        
-      </thead>
-      <tbody>
-        
-        <tr>
-          
-          
-          <td>2015</td>
-          
-          
-          
-          <td class="table-value">2</td>
-          
-          
-        </tr>
-        
-        <tr>
-          
-          
-          <td>2016</td>
-          
-          
-          
-          <td class="table-value">2</td>
-          
-          
-        </tr>
-        
-      </tbody>
-    </table>
-  </div>
-
-  <div id="datatableFooter">
-    
-    <p>Source: Office for National Statistics (ONS)</p>
-    
-    
-    <p>Geographical Area: United Kingdom</p>
-    
-    
-    <p>Unit of Measurement: Million metric tonnes, Tonnes per capita, Tonnes per GDP (£m)</p>
-    
-    
-    <p>Footnote: The level of material footprint for the Eurostat approach is shown excluding imports and exports of precious metals. Precious metals (particularly gold) have a high RME factor, so can have distinctive impact on the results. This is particularly true for the UK, who are responsible for more than three quarters of the EU’s imports of gold. While the impact is minimal at the total level, it is more evident when looking at the material footprint of metal ores.</p>
-    
-  </div>
-
-</div>
-
-
-<section>
-
-  <p class="async-loading" data-img="/envmetric-site/assets/img/loading-small.gif"></p>
-
-  <div class="async-loaded spacer medium" style="display:none;">
-
-    <ul class="nav nav-tabs data-view" role="tablist">
-  <li role="presentation" class="nav-item active">
-    <a class="nav-link" data-toggle="tab" href="#chartview" aria-controls="chartview" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Chart tab"
->Chart</a>
-  </li>
-  <li role="presentation" class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#tableview" aria-controls="tableview" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Table tab"
->Table</a>
-  </li>
-  <li role="presentation" class="nav-item map" style="display:none">
-    <a data-no-disagg="true" class="nav-link" data-toggle="tab" href="#mapview" aria-controls="mapview" role="tab" data-on="click"
-data-event-category="Tab change"
-data-event-action="Change data view"
-data-event-label="Change to Map tab"
->Map</a>
-  </li></ul>
-
-    <div class="tab-content data-view">
-  <div role="tabpanel" class="tab-pane active" id="chartview">
-    
-
-    <div id="dataset-size-warning" style="display:none">
-      <i class="fa fa-bolt"></i> There are too many datasets to show on the chart. Not all will be shown until you remove some selections.
-    </div>
-
-    
-    <div id="selectionsChart">
-      <div id="chart-canvas">
-        <h3 class="chart-title">
-          
-            Material footprint, material footprint per capita, and material footprint per GDP
-          
-        </h3>
-        <div id="chart" class="plot-container">
-          
-<canvas></canvas>
-<script>
-// Add a chart alteration to support the chart_graph_limits metadata field.
-opensdg.chartConfigAlter(function(config, info) {
-  if (info.graphLimits) {
-    var limit = _.findWhere(info.graphLimits, { unit: info.selectedUnit }) || info.graphLimits[0];
-    var overrides = {
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              min: limit.minimum,
-              max: limit.maximum,
-            }
-          }]
-        }
-      }
-    }
-    // Add these overrides onto the normal config.
-    $.extend(true, config, overrides);
-  }
-});
-</script>
-
-
-        </div>
-        <div id="plotLegend"></div>
-      </div>
-      <button id="btnSave" title="Download chart as image" class='btn btn-primary btn-download'>
-        Download Chart Image
-      </button>
-    </div>
-    <div id="chartSelectionDownload"></div>
-
-
-
-  </div>
-  <div role="tabpanel" class="tab-pane" id="tableview">
-    <div id="selectionsTable"></div>
-
-  </div>
-  <div role="tabpanel" class="tab-pane" id="mapview" class="map">
-    <div id="map">
-  <img src="/envmetric-site/assets/img/loading.gif" alt="Loading map" />
-</div>
-
-  </div>
-  
-</div>
-
-
-  </div>
-
-</section>
-
+  <div id="indicator-main" class="indicator-main col-md-12">
   
   <ul class="nav nav-tabs spacer medium" role="tablist">
 
@@ -611,7 +422,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Unit of measurement </th>
         <td>
           
-            <p>Million metric tonnes, Tonnes per capita, Tonnes per GDP (£m)</p>
+            
 
           
         </td>
@@ -625,10 +436,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Definitions </th>
         <td>
           
-            <p>UK’s material footprint, or raw material consumption, captures the amount of domestic and foreign extraction of materials needed to produce the products used by households, governments and charities in the UK.</p>
-<p>Material Footprint estimates provided are based on a <a href="https://ec.europa.eu/eurostat/documents/1798247/6874172/Handbook-country-RME-tool/">Eurostat method</a> and calculated as raw material equivalent of imports (RMEIM) plus domestic extraction (DE) minus raw material equivalents of exports (RMEEX). </p>
-<p>Material footprint per capita is calculated as raw material consumption (material footprint)/UK population.</p>
-<p>Material footprint per GDP is calculated as raw material consumption (material footprint)/GDP.</p>
+            
 
           
         </td>
@@ -656,7 +464,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Other information </th>
         <td>
           
-            <p>The choice of method used to calculate material footprint has an impact on the final estimates. In 2017, the Department for Environment, Food and Rural Affairs (Defra) consulted extensively with the University of Leeds about developing further environmentally relevant metrics for material use and resource efficiency, particularly in carbon terms. As a result, the University of Leeds have developed a multi-regional input-output (MRIO) approach, using a specifically derived UK MRIO database to underpin calculations. These estimates and further information on the Eurostat and University of Leeds approach are published in the <a href="https://www.ons.gov.uk/economy/environmentalaccounts/methodologies/measuringmaterialfootprintintheuk2008to2016">Measuring material footprint</a> report. While data is available from 2000, it is not reported here because data from 2008 onwards are not directly comparable to those in earlier years. In addition, the Eurostat method is more suitable for international comparisons. Data follows the UN specification for this indicator. This indicator has been identified in collaboration with topic experts.</p>
+            
 
           
         </td>
@@ -759,8 +567,8 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://github.com/Norric1Admin/envmetric-data/commit/548ea7398b51cef23d618ff10e46a91f97bca876" target="_blank">
-                2020-09-07: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
+              <a href="https://github.com/Norric1Admin/envmetric-data/commit/d8a5eaf94616cef56f206d19cfe777abe5711943" target="_blank">
+                2020-09-28: see changes on GitHub <span class="visuallyhidden">opens in a new window</span>
               </a>
             
 
@@ -1200,7 +1008,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Geographical coverage </th>
         <td>
           
-            <p>United Kingdom</p>
+            
 
           
         </td>
@@ -1220,10 +1028,6 @@ data-event-label="Change to Sources tab"
             
 
             
-              <a href="https://www.ons.gov.uk/economy/environmentalaccounts/datasets/materialfootprintintheuk" target="_blank">
-                Material Footprint in the UK <span class="visuallyhidden">opens in a new window</span>
-              </a>
-            
 
           
         </td>
@@ -1241,7 +1045,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Release date </th>
         <td>
           
-            <p>02/04/2020</p>
+            
 
           
         </td>
@@ -1255,7 +1059,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Next release </th>
         <td>
           
-            <p>TBC</p>
+            
 
           
         </td>
@@ -1269,7 +1073,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Statistical classification </th>
         <td>
           
-            <p>Official Statistic</p>
+            
 
           
         </td>
@@ -1283,7 +1087,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Contact details </th>
         <td>
           
-            <p>environment.accounts@ons.gov.uk</p>
+            
 
           
         </td>
@@ -1297,7 +1101,7 @@ data-event-label="Change to Sources tab"
         <th scope="row">Other information </th>
         <td>
           
-            <p>Data acquired is based on the Eurostat approach.</p>
+            
 
           
         </td>
@@ -1461,7 +1265,7 @@ data-event-label="Change to Sources tab"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/envmetric-site/assets/js/sdg.js?v=20200928115102'></script><script>
+<script src='/envmetric-site/assets/js/sdg.js?v=20200928122343'></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

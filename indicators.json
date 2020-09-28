@@ -153,7 +153,7 @@
           "id": "3-4-4",
           "title": "Footprints",
           "description": "",
-          "keywords": "",
+          "keywords": "material footprint, environment",
           "href": "/envmetric-site/3-4-4",
           "status": "complete"
         }]
@@ -291,7 +291,7 @@
           "description": "",
           "keywords": "material footprint, environment",
           "href": "/envmetric-site/5-1-1",
-          "status": "complete"
+          "status": "notstarted"
         },
         {
           "id": "5-1-2",
