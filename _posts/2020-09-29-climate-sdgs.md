@@ -42,6 +42,6 @@ Metrics with a connection to the SDGs, which have not been published yet due to 
 
 - [Metric 3.3.1: Land cover and degraded land area](https://norric1admin.github.io/envmetric-site/3-3-1) is based on SDGs 6.6.1 / 11.3.1.
 - [Metric 4.1.1: Drought](https://norric1admin.github.io/envmetric-site/4-1-1) is based on SDGs 1.5.1 / 11.5.1 / 13.11.
-- [Metric 5.4.7: Number of companies publishing sustainability reports](https://norric1admin.github.io/envmetric-site/5-4-7) is based on SDG 12.6.1.
+- [Metric 5.3.7: Number of companies publishing sustainability reports](https://norric1admin.github.io/envmetric-site/5-3-7) is based on SDG 12.6.1.
 - [Metric 5.5.4: Amount of fossil-fuel subsidies per unit of GDP (production and consumption) and as a proportion of total national expenditure on fossil fuels](https://norric1admin.github.io/envmetric-site/5-5-4) is based on SDG 12.c.1.
 - [Metric 6.3.8: Water demand in the built environment](https://norric1admin.github.io/envmetric-site/6-3-8) is based on SDGs 6.4.1 / 6.4.2.
