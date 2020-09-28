@@ -12,7 +12,8 @@ categories:
 
 The Sustainable Development Goals (SDGs) have several indicators relevant to climate change. This article details the connections between our metrics and the SDGs, using data taken from the [UK SDGs platform](https://sdgdata.gov.uk/).
 
-<strong>Published</strong>
+**Published**
+
 Metrics with a connection to the SDGs, which are currently live on the site.
 
 - [Metric 2.1.3: Concentrations of other (non-climate-forcing) pollutants](https://norric1admin.github.io/envmetric-site/2-1-3/) is based on SDG 11.6.2.
@@ -37,7 +38,8 @@ Metrics with a connection to the SDGs, which are currently live on the site.
 - [Metric 6.1.1: Water security](https://norric1admin.github.io/envmetric-site/6-1-1) is based on SDGs 6.4.1 / 6.4.2 / 6.5.2 (no relevant data available for 6.4.2 / 6.5.2).
 - [Metric 6.6.1: Disaster planning and strategies](https://norric1admin.github.io/envmetric-site/6-6-1) is based on SDGs 1.5.3 / 1.5.4 / 11.b.2.
 
-<strong>Unpublished</strong>
+**Unpublished**
+
 Metrics with a connection to the SDGs, which have not been published yet due to data limitations.
 
 - [Metric 3.3.1: Land cover and degraded land area](https://norric1admin.github.io/envmetric-site/3-3-1) is based on SDGs 6.6.1 / 11.3.1.
