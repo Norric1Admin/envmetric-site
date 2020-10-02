@@ -42,7 +42,37 @@ Metrics with a connection to the SDGs, which are currently live on the site.
 
 Metrics with a connection to the SDGs, which have not been published yet due to data limitations.
 
-- [Metric 3.3.1: Land cover and degraded land area](https://norric1admin.github.io/envmetric-site/3-3-1) is based on SDGs 6.6.1 / 11.3.1.
+- [Metric 3.3.1: Land cover and degraded land area](https://norric1admin.github.io/envmetric-site/3-3-1) is based on SDGs 11.3.1.
+- [Metric 4.1.1: Drought](https://norric1admin.github.io/envmetric-site/4-1-1) is based on SDGs 1.5.1 / 11.5.1 / 13.11.
+- [Metric 5.3.7: Number of companies publishing sustainability reports](https://norric1admin.github.io/envmetric-site/5-3-7) is based on SDG 12.6.1.
+- [Metric 5.5.4: Amount of fossil-fuel subsidies per unit of GDP (production and consumption) and as a proportion of total national expenditure on fossil fuels](https://norric1admin.github.io/envmetric-site/5-5-4) is based on SDG 12.c.1.
+- [Metric 6.3.8: Water demand in the built environment](https://norric1admin.github.io/envmetric-site/6-3-8) is based on SDGs 6.4.1 / 6.4.2.
+
+**Justification**
+
+An explanation as to why these SDG were included.
+
+- SDG 11.6.2. records particulate matter emissions by local authority. As these are a major byproduct of fossil fuel combustion, this indicator helps to give some local context which areas are more polluting.
+- SDGs 8.4.1 / 12.2.2. relate to the material footprint (raw material consumption), which is postively correlated to a country's energy usage and greenhouse gas emissions. 
+- SDG 7.3.1. record energy intensity, which demonstrates how efficiently the UK uses energy.
+- SDGs 7.1.2 / 7.2.1 / 9.1.2. relate to energy consumption, which is directly linked to the CO2 emissions.
+- SDGs 1.5.1 / 11.5.1 / 13.1.1 show the mortality rate of natural disasters, many of which are exacerbated by climate change. 
+- SDG 6.3.2. shows the condition of freshwater ecosystems, which face potential decline or degradation in the face of climate change.
+- SDG 12.5.1. records the UK recycling rate, which is an aspect of the circular economy and an attempt to reduce the overall material footprint.
+- SDGs 12.1.1 / 12.7.1. detail our sustainable consumption and production (SCP) national action plans, which actively seek to reduce consumption and emissions across the UK.
+- SDGs 4.7.1 / 12.8.1. describe the UK's plans to incorporate learning about sustainability and climate change into the education system. There are some slight variations by Country.
+- SDG 13.2.1. covers the UK legislation and programmes relating to climate change and greenhouse gas reduction.  
+- SDGs 15.1.1 / 15.2.1 / 15.4.1 / 15.4.2 detail the terrestrial protected areas in the UK. A healthy and stable terrestrial ecosystem is essential to the UK's plans for climate mitigation, and provides billions of pounds in ecoystem services every year. 
+- SDGs 14.5.1 / 14.c.1 detail the marine protected areas in the UK. Maintaining a stable fish population in our native waters is important step to improving national food security and resilience.
+- SDG 7.b.1 details the UK's investments in energy efficiency, which directly help to reduce emissions.
+- SDGs 6.4.1 / 6.4.2 / 6.5.2 details the UK's water use efficiency and extraction rates, which may be impacted by the effects of climate change.
+- SDGs 1.5.3 / 1.5.4 / 11.b.2 etail the strategies used to cope with natural disasters, many of which are exacerbated by climate change.  
+
+**Unpublished**
+
+Metrics with a connection to the SDGs, which have not been published yet due to data limitations.
+
+- [Metric 3.3.1: Land cover and degraded land area](https://norric1admin.github.io/envmetric-site/3-3-1) is based on SDGs 11.3.1.
 - [Metric 4.1.1: Drought](https://norric1admin.github.io/envmetric-site/4-1-1) is based on SDGs 1.5.1 / 11.5.1 / 13.11.
 - [Metric 5.3.7: Number of companies publishing sustainability reports](https://norric1admin.github.io/envmetric-site/5-3-7) is based on SDG 12.6.1.
 - [Metric 5.5.4: Amount of fossil-fuel subsidies per unit of GDP (production and consumption) and as a proportion of total national expenditure on fossil fuels](https://norric1admin.github.io/envmetric-site/5-5-4) is based on SDG 12.c.1.
