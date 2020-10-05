@@ -17,7 +17,7 @@ The Sustainable Development Goals (SDGs) have several indicators relevant to cli
 Metrics with a connection to the SDGs, which are currently live on the site.
 
 - [Metric 2.1.3: Concentrations of other (non-climate-forcing) pollutants](https://norric1admin.github.io/envmetric-site/2-1-3/) is based on SDG 11.6.2.
-- [Metric 3.2.1: Raw material consumption](https://norric1admin.github.io/envmetric-site/3-2-1) is based on SDGs 8.4.1 / 12.2.2.
+- [Metric 3.2.1: Raw material consumption](https://norric1admin.github.io/envmetric-site/3-2-1) is based on SDGs 8.4.1 / 8.4.2 / 12.2.2.
 - [Metric 3.4.2: Energy intensity](https://norric1admin.github.io/envmetric-site/3-4-2) is based on SDG 7.3.1.
 - [Metric 3.4.3: Energy and pollution consumption](https://norric1admin.github.io/envmetric-site/3-4-3) is based on SDGs 7.1.2 / 7.2.1 / 9.1.2.
 - [Metric 3.4.4: Footprints](https://norric1admin.github.io/envmetric-site/3-4-4) is based on SDGs 8.4.1 / 12.2.1.
